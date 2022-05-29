@@ -6,7 +6,7 @@ function Liked({ onAddToFavorite }) {
   const { favorites } = useContext(AppContext);
   return (
     <>
-      <List photos={favorites} onAddToFavorite={onAddToFavorite} />
+      <List photos={favorites} onAddToFavorite={onAddToFavorite} page={'liked'} />
     </>
   );
 }

@@ -4,8 +4,12 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <Link to="/">Все котики</Link>
-        <Link to="/liked">Любимые котики</Link>
+        <div className="header__link">
+          <Link to="/">Все котики</Link>
+        </div>
+        <div className="header__link">
+          <Link to="/liked">Любимые котики</Link>
+        </div>
       </div>
     </header>
   );

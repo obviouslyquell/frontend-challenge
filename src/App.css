@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1285px;
   margin: 0 auto;
 }
 .header {
@@ -12,6 +12,25 @@
   display: flex;
   align-items: center;
   background-color: #2196f3;
+  margin-bottom: 48px;
+}
+
+.header__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  height: 64px;
+}
+.header__link a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.header__link:hover a {
+  color: #fff;
+}
+.header__link:hover {
+  background-color: #1e88e5;
 }
 .list {
   display: grid;
@@ -59,4 +78,8 @@ img {
 .unliked {
   display: none;
   background-image: url('/src/images/unliked.svg');
+}
+
+.pagination {
+  text-align: center;
 }

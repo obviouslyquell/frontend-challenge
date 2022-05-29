@@ -62,7 +62,10 @@ function App() {
     <AppContext.Provider value={{ favorites, setFavorites }}>
       <Header />
       <Routes>
-        <Route path="/" element={<List photos={photos} onAddToFavorite={onAddToFavorite} />} />
+        <Route
+          path="/"
+          element={<List photos={photos} onAddToFavorite={onAddToFavorite} page={'home'} />}
+        />
         <Route path="liked" element={<Liked onAddToFavorite={onAddToFavorite} />} />
       </Routes>
     </AppContext.Provider>
