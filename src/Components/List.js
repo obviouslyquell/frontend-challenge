@@ -1,7 +1,8 @@
 import React from 'react';
-import Item from './Item';
+import Item from './Item/Item';
 
 function List({ photos, onAddToFavorite, page }) {
+  console.log(page);
   return (
     <>
       <div className="list container">
@@ -15,7 +16,7 @@ function List({ photos, onAddToFavorite, page }) {
             />
           ))}
       </div>
-      {page ? '' : <p className="pagination">... загружаем еще котиков ...</p>}
+      {page == 'home' ? <p className="pagination">... загружаем еще котиков ...</p> : ''}
     </>
   );
 }
